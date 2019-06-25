@@ -1,0 +1,18 @@
+//C program to state weather entered no. is prime or not.
+#include<stdio.h>
+int main(){
+int num=0,i;
+printf("Enter a no.\t"); //Enter a positive no.
+scanf("%d",&num);
+for(i=2;i<num;i++) // for loop start from 2 and continue unto num-1
+  {
+   if(num%i==0)
+    {
+    printf("You entered %d\nNot a prime no",num);
+    break; // when printf function execute break terminates the rest of loop.
+    }
+  }  
+    if(i==num) // when value of i becomes equal to value of input num value then printf will execute.
+    printf("You entered %d\nit is a prime no.",num);
+    return 0;
+}

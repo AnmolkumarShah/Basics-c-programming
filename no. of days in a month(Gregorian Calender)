@@ -1,0 +1,25 @@
+#include<stdio.h>
+void feb(void);
+int main(){
+int month;
+printf("Enter respective no. of the month\t");
+scanf("%d",&month);
+if(month==2){
+             feb();
+            }
+else if((month==1)||(month==3)||(month==5)||(month==7)||(month==8)||(month==10)||(month==12))
+    printf("\nMonth has 31 days");
+else if((month==4)||(month==6)||(month==9)||(month==11))
+    printf("\nMonth has 30 days");
+return 0;
+}
+void feb(void)
+{
+    int year;
+    printf("Enter year\t");
+    scanf("%d",&year);
+    if(year%4==0)
+    printf("\nMonth has 29 days");
+    else
+    printf("\nMonth has 28 days.");
+}

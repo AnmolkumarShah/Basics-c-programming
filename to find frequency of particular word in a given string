@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int i=0,k=0,yes=0;
+    char word[10],str[50];
+    printf("Enter string:\t");
+    gets(str);
+    printf("Enter word\t");
+    gets(word);
+   while(str[i]!='\0')
+   {
+       if(word[k]==str[i])
+       {
+           i++;
+           k++;
+           if(k==(strlen(word)-1))
+           {
+               yes++;
+               k=0;
+           }
+       }
+       else
+        i++;
+   }
+   printf("%s is repeating %d times",word,yes);
+return 0;
+}
